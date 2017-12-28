@@ -12,11 +12,6 @@ import Quote from "./../components/Typography/Quote";
 import Strong from "./../components/Typography/Strong";
 import Category from "./../components/Typography/Category";
 
-storiesOf("Button", module)
-  .add("Button Normal", () => <Button text="Buy Now" />)
-  .add("Button CTA", () => <Button text="Buy Now" type="cta" />)
-  .add("Button CTA Small", () => <Button text="Buy Now" type="ctaSmall" />);
-
 storiesOf("Typography", module)
   .add("Headings", () => (
     <div>
