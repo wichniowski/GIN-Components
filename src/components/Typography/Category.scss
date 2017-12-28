@@ -1,0 +1,12 @@
+@import "../../scss/gin-foundation";
+
+.category {
+  color: $color__gray;
+  font-weight: $font-weight__strong;
+  font-size: $font-size__def;
+  line-height: 1.5em;
+}
+
+.category__primary {
+  color: $color__primary;
+}

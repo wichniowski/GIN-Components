@@ -1,0 +1,13 @@
+@import "../../scss/gin-foundation";
+
+.quote {
+  padding-left: $spacing__big;
+  color: $color__gray;
+  border-left: solid $border__max $color__primary;
+}
+
+.caption {
+  color: $color__gray;
+  font-size: $font-size__small;
+  line-height: 1.5em;
+}

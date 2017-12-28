@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500");
+
+/* Colors */
+$color__text: #000;
+$color__gray: #ccc;
+$color__primary: #ff0000;
+
+$font-size__def: rem(16px);
+$font-size__h1: rem(24px);
+$font-size__h2: rem(20px);
+$font-size__small: rem(10px);
+
+$font-weight__def: 300;
+$font-weight__strong: 500;
+
+/* Spacing */
+$spacing__smallest: rem(2px);
+$spacing__smaller: rem(4px);
+$spacing__small: rem(8px);
+$spacing__def: rem(16px);
+$spacing__big: rem(24px);
+$spacing__bigger: rem(32px);
+$spacing__max: rem(48px);
+
+/* Border */
+$border__min: rem(1px);
+$border__def: rem(2px);
+$border__max: rem(3px);
+
+/* Globals */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: $font-weight__def;
+  font-size: $font-size__def;
+  color: $color__text;
+  line-height: 1.5em;
+}
+
+/* Grid Templates */
+@mixin grid12($radius) {
+  display: grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+}
+
+@mixin grid6($radius) {
+  display: grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+}
