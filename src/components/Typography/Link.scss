@@ -1,11 +1,10 @@
 @import "../../scss/gin-foundation";
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: $color__text;
   padding-bottom: $spacing__smallest;
   &:hover {
     color: $color__primary;
-    border-bottom: solid $border__min $color__primary;
   }
 }

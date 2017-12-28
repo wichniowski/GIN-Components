@@ -1,31 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,500");
 
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
 /* Colors */
 $color__text: #000;
 $color__gray: #ccc;
 $color__primary: #ff0000;
 
-$font-size__def: rem(16px);
-$font-size__h1: rem(24px);
-$font-size__h2: rem(20px);
-$font-size__small: rem(10px);
+$font-size__def: calculateRem(16px);
+$font-size__h1: calculateRem(24px);
+$font-size__h2: calculateRem(20px);
+$font-size__small: calculateRem(10px);
 
 $font-weight__def: 300;
 $font-weight__strong: 500;
 
 /* Spacing */
-$spacing__smallest: rem(2px);
-$spacing__smaller: rem(4px);
-$spacing__small: rem(8px);
-$spacing__def: rem(16px);
-$spacing__big: rem(24px);
-$spacing__bigger: rem(32px);
-$spacing__max: rem(48px);
+$spacing__smallest: calculateRem(2px);
+$spacing__smaller: calculateRem(4px);
+$spacing__small: calculateRem(8px);
+$spacing__def: calculateRem(16px);
+$spacing__big: calculateRem(24px);
+$spacing__bigger: calculateRem(32px);
+$spacing__max: calculateRem(48px);
 
 /* Border */
-$border__min: rem(1px);
-$border__def: rem(2px);
-$border__max: rem(3px);
+$border__min: calculateRem(1px);
+$border__def: calculateRem(2px);
+$border__max: calculateRem(3px);
 
 /* Globals */
 body {

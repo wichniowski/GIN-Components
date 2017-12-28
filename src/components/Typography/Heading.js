@@ -3,7 +3,7 @@ import "./Heading.scss";
 
 const Heading = ({ type, subheading, children }) => {
   return React.createElement(
-    type,
+    type ? type : "H1",
     { className: subheading && "subheading" },
     children
   );

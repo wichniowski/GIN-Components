@@ -1,7 +1,26 @@
-import Container from "./components/Container";
+import React from "react";
 
-export { default as Header } from "./components/Header";
-export { default as Footer } from "./components/Footer";
-export { default as Sidebar } from "./components/Sidebar";
+const Container = ({
+  area,
+  columnStart,
+  columnEnd,
+  rowStart,
+  rowEnd,
+  justify,
+  children
+}) => {
+  return (
+    <div
+      style={{
+        gridArea: area,
+        gridColumnStart: columnStart || 1,
+        gridColumnEnd: columnEnd || 12,
+        justifyItems: justify || "start"
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 export default Container;

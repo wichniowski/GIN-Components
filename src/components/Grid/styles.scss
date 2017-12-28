@@ -1,7 +1,8 @@
 .gin-app-grid {
   display: grid;
-  grid-template-columns: repeat(12, 8, 33333333%);
+  grid-template-columns: repeat(12, 8, 33.333333%);
   grid-template-rows: auto;
+  grid-row-gap: rem(16px);
   grid-template-areas:
     "header header header header header header header header header header header header"
     "sidebar sidebar main main main main main main main main main main"
@@ -10,6 +11,12 @@
 
 .gin-general-grid {
   display: grid;
-  grid-template-columns: repeat(12, 8, 33333333%);
+  grid-template-columns: repeat(12, calc(8.333333% - 16px));
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
   grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    "main main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
